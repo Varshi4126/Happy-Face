@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LyfCharge Main Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="JavaScript/index.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul class="topnav" id="jsid">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="topnav-right"><a href="#sign up">Sign Up</a></li>
+                <li class="topnav-right"><a href="#sign in">Sign In</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#help">Help</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftside-col">
+                        <h1 class="large">Know your Depression</h1>
+                        <h1 class="large">Find your solution</h1>
+                    </div>
+                    <form onsubmit="takeValue()">
+                        <div class="leftside-col">
+                            <h2>What is your current mood ?</h2>
+                            <ul>
+                                <li><input type="checkbox" name = "data" class="container"><span style='font-size:20px;' class="checkmark">&#128522; Happy</span></li><br>
+                                <li><input type="checkbox" name = "data" class="container"><span style='font-size:20px;' class="checkmark">&#128578; Normal</span></li><br>
+                                <li><input type="checkbox" name = "data" class="container"><span style='font-size:20px;' class="checkmark">&#128542; Sad</span></li><br>
+                                <li><input type="checkbox" name = "data" class="container"><span style='font-size:20px;' class="checkmark">&#128534; Irritated</span></li><br>
+                                <li><input type="checkbox" name = "data" class="container"><span style='font-size:20px;' class="checkmark">&#128545; Angry</span></li><br>
+                            </ul>
+                            <button onclick="save()">Proceed</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div class="col-6">
+                    <div class="rightside-col">
+                        <div class="videocontainer">
+                        <h2>Spend 3-minutes of your time and have a look at this video...!</h2>
+                        <h2>Keep Smiling...!</h2>
+                        <iframe width="460" height="215" src="https://www.youtube.com/embed/g57Ch-PFpvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<header>
+    <h1 class="HeaderSection">The Key Features provided by the website</h1>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="food.png" width="100px" height="100px">
+                </div>
+                <label>Take Your Food</label>
+                <p>The glucose levels in our body plays a very important role in maintaining the mental health. Since we are in a stage of self loosing control, we should make our diet proper. It's the First and foremost thing to be done. So eat healthier and stay healthier as long as we survive.</p>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="yoga.png" width="100px" height="100px">
+                </div>
+                <label>Exercise gives you immense Pleasure</label>
+                <p>yoga improves physical, mental, intellectual, and spiritual health. Yoga offers an effective method of managing and reducing stress, anxiety, and depression, and numerous studies demonstrate the efficacy of yoga on mood-related disorders.</p>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="music.webp" width="100px" height="100px">
+                </div>
+                <label>Relief your Mind with Music</label>
+                <p>Music can be used as a therapeutic tool to not only reduce stress, but to also promote healing and improve one's overall emotional well-being.Music can make us feel good. </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="chatting.png" width="100px" height="100px">
+                </div>
+                <label>Interact with others</label>
+                <p>The process of admitting to worries and fears is sometimes difficult, but when all parties have open and clear access to information and can assist each other in finding solutions, problems become easier to solve.</p>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="to do list.png" width="100px" height="100px">
+                </div>
+                <label>Organise the daily tasks for pleasure</label>
+                <p>If we can manage our tasks on our daily basis then our mind goes straight. Our day will be joyous and can progress along with fruitful thoughts.</p>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="box">
+                <div class="Icon">
+                    <img src="motivation.png" width="100px" height="100px">
+                </div>
+                <label>Fill yourself with positive vibes</label>
+                <p>The mind needs some nutrition as well like our whole body. We can feed it withe the wholesome thoughts which can direct the way throughout the day. Keep Simple and Straight..Follow the KISS Principle.</p>
+            </div>
+        </div>
+
+
+    </div>
+<div class="row">
+        <div class="col-12">
+            <button class="Test"><a href="http://127.0.0.1:5500/questionnaire/qa.html"> Start Test </a></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            function dropdownMenu() {
+                var i = document.getElementById("jsid");
+                if (i.className === "topnav") {
+                    i.className += " responsive";
+                /*change topnav to topnav.responsive*/
+                }
+
+                else {
+                    i.className = "topnav";
+                }
+            }
+            function save() {
+                let userInput = document.querySelector("#Name");
+                let message = document.querySelector("#message");
+
+                message.innerHTML = "Welcome to my webpage " + userInput.value;
+            }
+
+        </script>
+
+         
+    </body>
+</html>

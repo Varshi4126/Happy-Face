@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(#E9F1FA,#00ABE4, white);
+}
+
+h1, h2 {
+    font-weight: 300;
+    font-family: sans-serif;
+    color: brown;
+}
